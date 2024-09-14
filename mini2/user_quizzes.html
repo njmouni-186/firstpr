@@ -1,0 +1,21 @@
+<!-- user_quizzes.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Participated Quizzes</title>
+</head>
+<body>
+    <h1>Participated Quizzes</h1>
+    <ul>
+{% for quiz_result in quizzes %}
+<strong>Quiz Name:</strong> {{ quiz_result.quiz.name }} <br>
+<strong>User ID:</strong> {{ quiz_result.user_id }} <br>
+<strong>Score:</strong> {{ quiz_result.score }} <br>
+<br>
+{% endfor %}
+
+    </ul>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Login</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f0f2f5;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			flex-direction: column;
+		}
+		nav {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			margin-bottom: 20px;
+		}
+		nav ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+		}
+		nav ul li {
+			margin: 0 10px;
+		}
+		nav ul li a {
+			text-decoration: none;
+			color: #007bff;
+			font-weight: bold;
+		}
+		nav ul li a:hover {
+			color: #0056b3;
+		}
+		h1 {
+			color: green;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		form {
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			width: 300px;
+			display: flex;
+			flex-direction: column;
+		}
+		label {
+			display: block;
+			margin-bottom: 5px;
+			font-weight: bold;
+		}
+		input[type="text"],
+		input[type="password"] {
+			width: 100%;
+			padding: 8px;
+			margin-bottom: 15px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+		button {
+			width: 100%;
+			padding: 10px;
+			background-color: green;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+		}
+		button:hover {
+			background-color: darkgreen;
+		}
+	</style>
+</head>
+<body>
+	
+	<h1>Login to your account</h1>
+	<form action="#" method="post">
+		<label for="username">Username:</label>
+		<input type="text" name="username" id="username" />
+		<label for="password">Password:</label>
+		<input type="password" name="password" id="password" />
+		<button type="submit">Submit</button>
+	</form>
+</body>
+</html>
